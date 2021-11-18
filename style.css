@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@309&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border-color: black; */
+}
+body {
+  font-family: "Oswald", sans-serif;
+  height: 100vh;
+  background-color: #8384f0;
+  background-image: conic-gradient(white, white, white, white, white);
+  font-size: 22px;
+  position: relative;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /*it makes the things absolute center */
+  width: 450px;
+  background-color: white;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 1px 1px 13px rgb(0 0 0 / 10%);
+}
+h1 {
+  background-color: rgb(171, 226, 43);
+  padding: 10px 0;
+  font-size: 28px;
+  border-radius: 18px;
+}
+p {
+  color: #292828;
+  border-radius: 3px;
+}
+.control {
+  margin: 25px 0;
+  /* background-color: #292828; */
+}
+input {
+  border: 2px solid blue;
+  outline: none;
+  text-align: center;
+  /* border-bottom: 1px solid blue; */
+  /* border-top: 1px solid blue; */
+  border-width: 2px;
+  border-radius: 3px;
+  color: blue;
+  font-size: 28px;
+  margin-top: 20px;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+select {
+  border: none;
+  outline: none;
+  /* text-align: center; */
+  border: 1px solid blue;
+  border-width: 2px;
+  color: #7e7e7e;
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 11px 34px;
+  border-radius: 25px;
+  width: 75%;
+}
+button#calculate {
+  color: white;
+  background: #150285;
+  border: 1px solid transparent;
+  font-size: 17px;
+  border-radius: 25px;
+  padding: 14px 29px;
+  margin: 25px;
+  cursor: pointer;
+}
+
+button#calculate:hover {
+  /* color: #16a465; */
+  border-color: blue;
+  background: rgb(19, 4, 155);
+}
+
+.totaltip {
+  background-color: rgb(171, 226, 43);
+  border-radius: 18px;
+  padding: 25px 0 35px;
+}
+p.tip {
+  font-size: 38px;
+  color: #0e3a6d;
+  margin-top: 10px;
+}
+#calculate {
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px blue;
+}
